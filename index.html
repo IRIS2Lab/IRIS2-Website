@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRIS² Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #0072CE;
+      color: white;
+    }
+    header img {
+      height: 50px;
+    }
+    nav {
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 25px;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .team-member {
+      text-align: center;
+    }
+    .team-member img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+    .team-member h3 {
+      margin: 0.5rem 0 0.25rem;
+    }
+    .team-member p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .social-icons a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #0072CE;
+      font-size: 1.2rem;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .project {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: #f4f4f4;
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    .project img {
+      height: 40px;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #f1f1f1;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/mnt/data/iris2_lab_graphic.png" alt="IRIS² Lab Logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#news">News</a>
+      <a href="#projects">Projects</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>IRIS² Lab</h1>
+    <p>Infrastructure, Robotics, and Intelligent Spatial Systems</p>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>The IRIS² Lab focuses on designing and deploying intelligent robotic systems that interact with and support critical infrastructure. We specialize in AI-driven spatial intelligence, geospatial analytics, and resilient systems for urban and industrial environments.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research Areas</h2>
+    <div class="grid">
+      <div class="card">Critical Infrastructure</div>
+      <div class="card">Autonomous Robotics</div>
+      <div class="card">Geospatial Intelligence & AI</div>
+      <div class="card">Telecoms Networks</div>
+      <div class="card">Electricity Networks</div>
+      <div class="card">Decision Support Systems</div>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul>
+      <li><strong>May 2025:</strong> New paper accepted at ICRA on geospatial perception for infrastructure mapping.</li>
+      <li><strong>April 2025:</strong> IRIS² Lab awarded grant for resilient AI systems in smart cities.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <h3>UrbanInfra AI</h3>
+        <p>A project focused on AI-based risk detection for aging urban infrastructure using aerial robotics and spatial mapping.</p>
+        <img src="https://via.placeholder.com/100x40?text=NSF" alt="NSF Logo">
+      </div>
+      <div class="project">
+        <h3>SmartGrid Mapper</h3>
+        <p>Developing a robotic platform for inspecting power grid components and generating real-time geospatial data feeds.</p>
+        <img src="https://via.placeholder.com/100x40?text=DOE" alt="DOE Logo">
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://via.placeholder.com/120" alt="Team Member">
+        <h3>Dr. Alex Rivers</h3>
+        <p>Lab Director<br>Robotics, AI Systems, Infrastructure Planning</p>
+        <div class="social-icons">
+          <a href="#">🔗</a>
+          <a href="#">🐦</a>
+          <a href="#">💼</a>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="https://via.placeholder.com/120" alt="Team Member">
+        <h3>Dr. Samira Patel</h3>
+        <p>Geospatial AI Lead<br>Machine Learning, Mapping, Earth Observation</p>
+        <div class="social-icons">
+          <a href="#">🔗</a>
+          <a href="#">🐦</a>
+          <a href="#">💼</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@iris2lab.org<br />
+    Address: Your Lab Location<br />
+    Twitter | LinkedIn | GitHub</p>
+  </section>
+
+  <footer>
+    &copy; 2025 IRIS² Lab. All rights reserved.
+  </footer>
+</body>
+</html>
